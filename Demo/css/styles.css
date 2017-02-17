@@ -1,0 +1,21 @@
+.bgimage
+{
+    background-image: url(../EventsImg/HeaderBanner.jpg);
+    background-position: center center;
+    background-size: contain;
+    height: 200px;
+    color: black;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.upEvents
+{
+    padding-top: 60px;
+}
+
+footer
+{
+    background-color: dodgerblue;
+}
