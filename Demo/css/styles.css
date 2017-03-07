@@ -1,3 +1,4 @@
+
 .bgimage
 {
     background-image: url(../EventsImg/HeaderBanner.jpg);
@@ -18,4 +19,9 @@
 footer
 {
     background-color: dodgerblue;
+}
+
+.eventBanner
+{
+    max-height: 
 }
