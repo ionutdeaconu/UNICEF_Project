@@ -7,22 +7,13 @@
     
     <!--Google Sign in-->
     <meta name="google-signin-client_id" content="1072977554166-st43ulc96co7ldgmc609fvukufj67c0h.apps.googleusercontent.com">
-     <script src="https://apis.google.com/js/platform.js" async defer></script>
     
     <link rel="stylesheet" href= "css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    gapi.load('auth2', function() {
-    gapi.auth2.init();
-    });
-    
-    <div
-    
+    <link rel="stylesheet" href="css/styles.css"
 
     <title></title>
 </head>
 <body>
-   
 
 <header class="content bgimage">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -34,15 +25,15 @@
                 <span class ="icon-bar"></span>
                 <span class ="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Moonlight Engine</a>
+            <a class="navbar-brand" href="index.html">Moonlight Engine</a>
         </div>
         <div class="collapse navbar-collapse" id="collapsemenu">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li> <a href ="eventPage.html"> Events</a></li>
             <li> <a href ="dontation.html"> Donate </a></li>
-            <li> <a href ="event-media.html">Media</a></li>
-            <li> </li>
+            <li class="active"> <a href ="event-media.html">Media</a></li>
+            <li> <a href ="profilePage.html">User</a></li>
             <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -50,57 +41,26 @@
                     <li><a href="#">Item 2</a></li>
                     <li><a href="#">Item 3</a></li>
                 </ul>
-            <li><button</li>
             </li>
-        </ul> 
-    </div>
+            
+             <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Log-in</a></li>
+             </ul>
+            
+            
 </nav>
 <div class="container">
     <h1>Welcome text!</h1>
 </div>
 </header>  
-
     
-    
-    <!--WORK HERE-->
-    
-    
-<div class="container">
-    <div class="row">
-        <div class=  "col-sm-4" "col-xs-6">
-             <h1>Sign in test</h1>
-            Try thissss:
-            <button class="g-signin2" data-onsuccess="onSignIn">Sign in with goooogle</button>
-          
-    </div>
-</div>
-    </div>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-
-    
-
-    
-    
-    
-    
-    
-    <script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 <!--Google API-->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
         
         
         <div id="myModal" class="modal fade" role="dialog">
@@ -117,7 +77,7 @@
                                 <div class="row">
                                     <div class=  "col-sm-4" "col-xs-6">
                                         <p>Sign in test</p>
-                                        <button class="g-signin2" data-onsuccess="onSignIn">Sign in with goooogle</button>
+                                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
           
     </div>
 </div>
@@ -135,4 +95,3 @@
 
 
 </html>
-

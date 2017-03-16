@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Google Sign in-->
+    <meta name="google-signin-client_id" content="1072977554166-st43ulc96co7ldgmc609fvukufj67c0h.apps.googleusercontent.com">
+    
     <link rel="stylesheet" href= "css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"
 
@@ -21,14 +25,15 @@
                 <span class ="icon-bar"></span>
                 <span class ="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">PlanEvents</a>
+            <a class="navbar-brand" href="index.html">Moonlight Engine</a>
         </div>
         <div class="collapse navbar-collapse" id="collapsemenu">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li> <a href ="#"> Events</a></li>
-            <li> <a href ="#"> Donate </a></li>
-            <li> <a href ="#">Media</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href ="eventPage.html"> Events</a></li>
+            <li class="active"> <a href ="dontation.html"> Donate </a></li>
+            <li> <a href ="event-media.html">Media</a></li>
+            <li> <a href ="profilePage.html">User</a></li>
             <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -36,37 +41,84 @@
                     <li><a href="#">Item 2</a></li>
                     <li><a href="#">Item 3</a></li>
                 </ul>
-            <li><button</li>
             </li>
-        </ul> 
-    </div>
+            
+             <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Log-in</a></li>
+             </ul>
+            
+            
 </nav>
-
-</header>  
+<div class="container">
+    <h1></h1>
+</div>
+</header>     
      
 
 <div class="container">
     <div class="row">
-        <div class=  "col-sm-4" "col-xs-6">
+        <div class=   "col-xs-12">
              <h1>Donate now!</h1>
+            <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at euismod augue. Quisque ut iaculis est, eget rhoncus augue. Duis arcu leo, suscipit quis blandit sed, suscipit quis arcu. Quisque risus ante, mattis vel iaculis pulvinar, consequat a tortor. Quisque malesuada turpis in ex rhoncus, vel tempus velit pretium. Vestibulum eu magna ex. Cras sed orci id est placerat hendrerit. Proin vel mi vel libero tempor aliquam. Morbi mollis enim magna, rutrum tempus neque aliquet iaculis. Vivamus sed dignissim enim, non rhoncus neque. Praesent lorem dui, facilisis gravida fringilla in, viverra vitae lacus.</p1>
+            <hr/>
+        </div>
+           
+        <div class=   "col-xs-12 col-xs-offset-5">
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="G99SSSS79L4R8">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+        </div>
+          
+    </div>
+</div>
+    
+    
+
+    
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<!--Google API-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+        
+        
+        
+        <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">Sign in with Google</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class=  "col-sm-4" "col-xs-6">
+                                        <p>Sign in test</p>
+                                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
           
     </div>
 </div>
     </div>
-    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
 
-    
-    <script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+                </div>
+            </div>
+        </ul> 
+    </div>
 
 
 </html>
+
+
 

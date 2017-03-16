@@ -16,12 +16,50 @@
     padding-top: 60px;
 }
 
-footer
-{
-    background-color: dodgerblue;
-}
+
 
 .eventBanner
 {
     max-height: 
+}
+
+.profile-list-group span
+{
+   
+  margin-left:10px;
+    
+}
+
+.profile-list-group a
+{
+   
+    min-height: 100px;  
+    max-width: 600px;
+    
+}
+
+.col-centered{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group-item img
+{
+    margin-top: -5px;
+}
+
+.list-group-item h1
+{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 100px;
+}
+
+.center-block
+{
+    float: none;
 }
