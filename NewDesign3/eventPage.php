@@ -12,7 +12,7 @@
     <!--Google Sign in-->
     <meta name="google-signin-client_id" content="1072977554166-st43ulc96co7ldgmc609fvukufj67c0h.apps.googleusercontent.com">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Example Event</title>
     
     <?php session_start();?>
 
@@ -39,12 +39,12 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="index.html">
+                    <a href="index.php">
                         MoonLight Engine
                     </a>
                 </li>
                 <li>
-                    <a href="UserPage.html">Dashboard</a>
+                    <a href="UserPage.php">Dashboard</a>
                 </li>
                 <li>
                     <a href="#">Search</a>
@@ -75,15 +75,16 @@
       
         
               
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            
                 <img class ="img-responsive" src="Images/EventBanner.png">
-            </div>
+           
             
             <div class="col-md-8 col-sm-8">
                 
-               <h1 id="EventID">EventTitle<button type="button" class="btn btn-warning">Admin Page</button></h1>
+               <h1 id="EventID">EventTitle <button type="button" class="btn btn-warning center-line">Admin Page</button></h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac diam gravida leo commodo tempus vitae sit amet lacus. Duis eros justo, lobortis sed mattis sit amet, porta eu ante. Nullam nec convallis lorem, sed rhoncus tellus. Mauris consequat scelerisque interdum. Ut dignissim neque a purus accumsan, quis congue augue scelerisque. Integer et elit a justo rutrum pellentesque id non ipsum. Nullam ac viverra lorem. </p>
+                
                  </div>
                 <div class="col-md-4 col-sm-4 addInfo">
                 <h1>QuickDetails</h1>
@@ -100,19 +101,23 @@
                    
                     
                     </p>
+             
             </div>
+        
             
     
-    <hr>
+   
     
-                <div class ="col-md-6">
+                <div class ="col-md-5 col-lg-6 col-sm-12">
+                    <hr>
                     <h1>How to get there</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac diam gravida leo commodo tempus vitae sit amet lacus. Duis eros justo, lobortis sed mattis sit amet, porta eu ante. Nullam nec convallis lorem, sed rhoncus tellus. Mauris consequat scelerisque interdum. Ut dignissim neque a purus accumsan, quis congue augue scelerisque. Integer et elit a justo rutrum pellentesque id non ipsum. Nullam ac viverra lorem.</p></div>
             
-                <div class= "col-md-6">
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.381665226461!2d-0.13622878422938722!3d51.52455917963792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2f69173579%3A0xd008c67faecc133e!2sUniversity+College+London!5e0!3m2!1ses!2suk!4v1488309996621" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class= "col-lg-6 col-md-7 col-sm-12">
+                    <hr>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.381665226461!2d-0.13622878422938722!3d51.52455917963792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2f69173579%3A0xd008c67faecc133e!2sUniversity+College+London!5e0!3m2!1ses!2suk!4v1488309996621" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-    
+   
     
       
     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-chevron-right"></span></a>

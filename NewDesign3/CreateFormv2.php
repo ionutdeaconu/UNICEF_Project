@@ -73,12 +73,12 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="index.html">
+                    <a href="index.php">
                         MoonLight Engine
                     </a>
                 </li>
                 <li>
-                    <a href="UserPage.html">Dashboard</a>
+                    <a href="UserPage.php">Dashboard</a>
                 </li>
                 <li>
                     <a href="#">Search</a>
@@ -109,7 +109,7 @@
       
         
    
-            <div class="container">
+            <div class="container-fluid">
                  <img class ="img-responsive" src="Images/EventBanner.png">
                 
     <h1>Event Details</h1>
@@ -538,7 +538,7 @@
     </select>
     </div>
     <hr>
-    <h2>Tickets <button type="button" class="btn btn-success" onclick="addPaidTicket()" >Add Ticket</button> <button type="button" class="btn btn-warning" onclick="removeLast()" >Remove Tickets</button></h2>
+    <h2>Tickets <button type="button" class="btn btn-success center-line" onclick="addPaidTicket()" >Add Ticket</button> <button type="button" class="btn btn-warning center-line" onclick="removeLast()" >Remove Tickets</button></h2>
     
      <div class="ticket">       
       <div id="type">    

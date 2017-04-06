@@ -12,7 +12,7 @@
     <!--Google Sign in-->
     <meta name="google-signin-client_id" content="1072977554166-st43ulc96co7ldgmc609fvukufj67c0h.apps.googleusercontent.com">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title><?php echo htmlspecialchars($_POST['title']); ?></title>
     
     <?php session_start();?>
 
@@ -72,7 +72,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="UserPage.html">Dashboard</a>
+                    <a href="UserPage.php">Dashboard</a>
                 </li>
                 <li>
                     <a href="#">Search</a>
@@ -105,7 +105,7 @@
               
         <div class="container">
             <img class ="img-responsive" src="Images/EventBanner.png">
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-8">
                 
                 <!--THIS ARE THE KEYS: 
                 
@@ -128,7 +128,7 @@
                     ?*//>
 </table>-->
                 
-               <h1 id="EventID"><?php echo htmlspecialchars($_POST['title']); ?><button type="button" class="btn btn-warning">Admin Page</button></h1>
+               <h1 id="EventID"><?php echo htmlspecialchars($_POST['title']); ?><button type="button" class="btn btn-warning center-line ">Admin Page</button></h1>
                 <p> <?php echo htmlspecialchars($_POST['edesc']); ?></p>
                  </div>
                 <div class="col-md-4 addInfo">
@@ -148,13 +148,14 @@
     
     
     
-                <div class ="col-md-6">
+                <div class ="col-md-5 col-lg-6 col-sm-12">
                     <hr>
                     <h1>How to get there</h1>
                     <p><?php echo htmlspecialchars($_POST['indications']); ?></p></div>
             
-                <div class= "col-md-6">
-                   <iframe src="https://maps.google.it/maps?q=<?php echo htmlspecialchars($_POST['address1']); ?>&output=embed" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class= "col-lg-6 col-md-7 col-sm-12">
+                    <hr>
+                   <iframe src="https://maps.google.it/maps?q=<?php echo htmlspecialchars($_POST['address1']); ?>&output=embed" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
     
     

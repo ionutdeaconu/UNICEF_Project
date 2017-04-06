@@ -179,3 +179,16 @@
 
     
 }
+
+.center-line
+{
+   
+    margin-bottom:10px;
+}
+
+.fixedbutton
+{
+    position: fixed;
+    top: 50%;
+    left: 250px;
+}
