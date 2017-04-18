@@ -424,6 +424,9 @@ document.getElementById("files").onchange = function () {
       <option value="ZW">Zimbabwe</option>
     </select>
 <div id="map"></div>
+
+
+<!--
     <?php
     $Lat = 51.5245592;
     $Lon = -0.1340401;
@@ -463,6 +466,7 @@ document.getElementById("files").onchange = function () {
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXtkPx2VepKXV6hd2AkS1oJqAnTos8gJ4&callback=initMap">
     </script>    
+  -->
 
     <div class="ticket">       
       <div id="type">    
@@ -474,16 +478,12 @@ document.getElementById("files").onchange = function () {
     </div>
 
   <script>
-  function addPaidTicket() {    
-    $('<input type="text" name="ticketType" value="Ticket Type e.g. Early Bird">').appendTo("#type");
-    $('<input type="text" name="ticketQuantity" value="Ticket Maximum Quantity e.g. 100"> ').appendTo('#type');
-    $('<input type="text" name="ticketPrice" value="Ticket Price e.g. £30.0"><br>').appendTo('#type');
-  }
+  var paid = 0;
 
-  function addFreeTicket() {
-    $('<input type="text" name="ticketType" value="Ticket Type e.g. Early Bird">').appendTo("#type");
-    $('<input type="text" name="ticketQuantity" value="Ticket Maximum Quantity e.g. 100"> ').appendTo('#type');
-    $('<input type="text" name="ticketPrice" value="£0.0" disabled><br>').appendTo('#type');
+  function addPaidTicket() {    
+    $('<input type="text" id="ticketType' + paid++ + '" value="Ticket Type e.g. Early Bird">').appendTo("#type");
+    $('<input type="text" id="ticketQuantity' + paid + '" value="Ticket Maximum Quantity e.g. 100"> ').appendTo('#type');
+    $('<input type="text" id="ticketPrice' + paid + '" value="Ticket Price e.g. £30.0"><br>').appendTo('#type');
   }
 
   function removeLast() {
@@ -495,6 +495,7 @@ document.getElementById("files").onchange = function () {
     lastChild3.parentNode.removeChild(lastChild3);
     var lastChild4 = document.getElementById("type").lastChild;
     lastChild4.parentNode.removeChild(lastChild4);
+    paid--;
   }
   </script>
   <input type="button" onclick="removeLast()" value="Remove"><br>
